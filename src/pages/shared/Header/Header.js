@@ -10,149 +10,167 @@ const Header = () => {
 
 
 
-  return (
-     <div >
-          <nav className="navbar bg-base-100 container mx-auto py-4">
-              <div className="navbar-start">
-                  <div className="dropdown">
-                      <label tabIndex={0} className="btn btn-ghost lg:hidden">
-                          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                      </label>
-                      <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+    return (
+        <div >
+            <nav className="navbar bg-base-100 container mx-auto py-4">
+                <div className="navbar-start">
+                    <div className="dropdown">
+                        <label tabIndex={0} className="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                        </label>
+                        <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                            <li>
+                                <NavLink
+                                    to="/"
+                                    className={({ isActive, isPending }) =>
+                                        isPending ? "pending" : isActive ? "active" : ""
+                                    }
+                                >
+                                    Home
+                                </NavLink>
+                            </li>
+                            <li>
+                                <NavLink
+                                    to="/about-us"
+                                    className={({ isActive, isPending }) =>
+                                        isPending ? "pending" : isActive ? "active" : ""
+                                    }
+                                >
+                                    About Us
+                                </NavLink>
+                            </li>
+                            <li>
+                                <NavLink
+                                    to="/appointments"
+                                    className={({ isActive, isPending }) =>
+                                        isPending ? "pending" : isActive ? "active" : ""
+                                    }
+                                >
+                                    Apointments
+                                </NavLink>
+                            </li>
+                            <li>
+                                <NavLink
+                                    to="/reviews"
+                                    className={({ isActive, isPending }) =>
+                                        isPending ? "pending" : isActive ? "active" : ""
+                                    }
+                                >
+                                    Reviews
+                                </NavLink>
+                            </li>
+                            <li>
+                                <NavLink
+                                    to="/contact-us"
+                                    className={({ isActive, isPending }) =>
+                                        isPending ? "pending" : isActive ? "active" : ""
+                                    }
+                                >
+                                    Contact Us
+                                </NavLink>
+                            </li>
+                            <li>
+                                <NavLink
+                                    to="/Login"
+                                    className={({ isActive, isPending }) =>
+                                        isPending ? "pending" : isActive ? "active" : ""
+                                    }
+                                >
+                                    Login
+                                </NavLink>
+                            </li>
+                        </ul>
+                    </div>
+                    <Link to='/' className='text-4xl font-bold text-[#3A4256]' >MediCare</Link>
+                </div>
+                <div className="navbar-center hidden lg:flex">
+                    <ul className="menu menu-horizontal px-1">
                         <li>
-                              <NavLink
-                                  to="/"
-                                  className={({ isActive, isPending }) =>
-                                      isPending ? "pending" : isActive ? "active" : ""
-                                  }
-                              >
-                                  Home
-                              </NavLink>
+                            <NavLink
+                                to="/"
+                                className={({ isActive, isPending }) =>
+                                    isPending ? "pending" : isActive ? "active" : ""
+                                }
+                            >
+                                Home
+                            </NavLink>
                         </li>
                         <li>
-                              <NavLink
-                                  to="/about-us"
-                                  className={({ isActive, isPending }) =>
-                                      isPending ? "pending" : isActive ? "active" : ""
-                                  }
-                              >
-                                  About Us
-                              </NavLink>
+                            <NavLink
+                                to="/about-us"
+                                className={({ isActive, isPending }) =>
+                                    isPending ? "pending" : isActive ? "active" : ""
+                                }
+                            >
+                                About Us
+                            </NavLink>
                         </li>
                         <li>
-                              <NavLink
-                                  to="/appointments"
-                                  className={({ isActive, isPending }) =>
-                                      isPending ? "pending" : isActive ? "active" : ""
-                                  }
-                              >
-                                  Apointments
-                              </NavLink>
+                            <NavLink
+                                to="/appointments"
+                                className={({ isActive, isPending }) =>
+                                    isPending ? "pending" : isActive ? "active" : ""
+                                }
+                            >
+                                Apointments
+                            </NavLink>
                         </li>
                         <li>
-                              <NavLink
-                                  to="/reviews"
-                                  className={({ isActive, isPending }) =>
-                                      isPending ? "pending" : isActive ? "active" : ""
-                                  }
-                              >
-                                  Reviews
-                              </NavLink>
+                            <NavLink
+                                to="/reviews"
+                                className={({ isActive, isPending }) =>
+                                    isPending ? "pending" : isActive ? "active" : ""
+                                }
+                            >
+                                Reviews
+                            </NavLink>
                         </li>
                         <li>
-                              <NavLink
-                                  to="/contact-us"
-                                  className={({ isActive, isPending }) =>
-                                      isPending ? "pending" : isActive ? "active" : ""
-                                  }
-                              >
-                                  Contact Us
-                              </NavLink>
+                            <NavLink
+                                to="/contact-us"
+                                className={({ isActive, isPending }) =>
+                                    isPending ? "pending" : isActive ? "active" : ""
+                                }
+                            >
+                                Contact Us
+                            </NavLink>
                         </li>
                         <li>
-                              <NavLink
-                                  to="/Login"
-                                  className={({ isActive, isPending }) =>
-                                      isPending ? "pending" : isActive ? "active" : ""
-                                  }
-                              >
-                                  Login
-                              </NavLink>
+                            <NavLink
+                                to="/login"
+                                className={({ isActive, isPending }) =>
+                                    isPending ? "pending" : isActive ? "active" : ""
+                                }
+                            >
+                                Login
+                            </NavLink>
                         </li>
-                      </ul>
-                  </div>
-                  <Link to='/' className='text-4xl font-bold text-[#3A4256]' >MediCare</Link>
-              </div>
-              <div className="navbar-center hidden lg:flex">
-                  <ul className="menu menu-horizontal px-1">
-                      <li>
-                          <NavLink
-                              to="/"
-                              className={({ isActive, isPending }) =>
-                                  isPending ? "pending" : isActive ? "active" : ""
-                              }
-                          >
-                              Home
-                          </NavLink>
-                      </li>
-                      <li>
-                          <NavLink
-                              to="/about-us"
-                              className={({ isActive, isPending }) =>
-                                  isPending ? "pending" : isActive ? "active" : ""
-                              }
-                          >
-                              About Us
-                          </NavLink>
-                      </li>
-                      <li>
-                          <NavLink
-                              to="/appointments"
-                              className={({ isActive, isPending }) =>
-                                  isPending ? "pending" : isActive ? "active" : ""
-                              }
-                          >
-                              Apointments
-                          </NavLink>
-                      </li>
-                      <li>
-                          <NavLink
-                              to="/reviews"
-                              className={({ isActive, isPending }) =>
-                                  isPending ? "pending" : isActive ? "active" : ""
-                              }
-                          >
-                              Reviews
-                          </NavLink>
-                      </li>
-                      <li>
-                          <NavLink
-                              to="/contact-us"
-                              className={({ isActive, isPending }) =>
-                                  isPending ? "pending" : isActive ? "active" : ""
-                              }
-                          >
-                              Contact Us
-                          </NavLink>
-                      </li>
-                      <li>
-                          <NavLink
-                              to="/login"
-                              className={({ isActive, isPending }) =>
-                                  isPending ? "pending" : isActive ? "active" : ""
-                              }
-                          >
-                              Login
-                          </NavLink>
-                      </li>
-                  </ul>
-              </div>
-              <div className="navbar-end">
-                  <a className="btn">Get started</a>
-              </div>
-          </nav>
-     </div>
-  )
+                    </ul>
+                </div>
+                <div className="navbar-end">
+                    <div className="dropdown dropdown-end">
+                        <label tabIndex={0} className="">
+                            <img src="" className='w-12 h-12 rounded-full border border-gray-500 cursor-pointer' alt="" />
+                        </label>
+                        <ul tabIndex={0} className="dropdown-content menu px-4 py-6 shadow bg-base-100 rounded-box w-52 ">
+                           <li className='hover:bg-gray-100 hover:bg-slate-200 h-12 p-4 cursor-pointer '>
+                            item
+                           </li>
+                           <li className='hover:bg-gray-100 hover:bg-slate-200 h-12 p-4 cursor-pointer '>
+                            item
+                           </li>
+                           <li className='hover:bg-gray-100 hover:bg-slate-200 h-12 p-4 cursor-pointer '>
+                            item
+                           </li>
+                           <li className='hover:bg-gray-100 hover:bg-slate-200 h-12 p-4 cursor-pointer '>
+                            item
+                           </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    )
 }
 
 export default Header
