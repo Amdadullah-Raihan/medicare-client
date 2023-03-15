@@ -1,15 +1,19 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom';
 import logo from '../../../assests/logo.png';
+import useFirebase from '../../../hooks/useFirebase';
 
 
 
 
 const Header = () => {
+    const { user } = useFirebase();
+    console.log(user);
 
+    // handle sign out
+    const handleSignOut = () => {
 
-
-
+    }
     return (
         <div >
             <nav className="navbar bg-base-100 container mx-auto py-4">
@@ -135,38 +139,67 @@ const Header = () => {
                                 Contact Us
                             </NavLink>
                         </li>
-                        <li>
-                            <NavLink
-                                to="/login"
-                                className={({ isActive, isPending }) =>
-                                    isPending ? "pending" : isActive ? "active" : ""
-                                }
-                            >
-                                Login
-                            </NavLink>
-                        </li>
+
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <div className="dropdown dropdown-end">
-                        <label tabIndex={0} className="">
-                            <img src="" className='w-12 h-12 rounded-full border border-gray-500 cursor-pointer' alt="" />
-                        </label>
-                        <ul tabIndex={0} className="dropdown-content menu px-4 py-6 shadow bg-base-100 rounded-box w-52 ">
-                           <li className='hover:bg-gray-100 hover:bg-slate-200 h-12 p-4 cursor-pointer '>
-                            item
-                           </li>
-                           <li className='hover:bg-gray-100 hover:bg-slate-200 h-12 p-4 cursor-pointer '>
-                            item
-                           </li>
-                           <li className='hover:bg-gray-100 hover:bg-slate-200 h-12 p-4 cursor-pointer '>
-                            item
-                           </li>
-                           <li className='hover:bg-gray-100 hover:bg-slate-200 h-12 p-4 cursor-pointer '>
-                            item
-                           </li>
-                        </ul>
-                    </div>
+                    
+
+                        {
+                            user?.email ? <div className="dropdown dropdown-end ">
+
+                                <label tabIndex={0} className="btn border-none p-0 bg-white w-12 ml-3 rounded-full">
+                                    <img src={user.photoURL} alt="user" className='rounded-full w-full' />
+                                </label>
+
+                                {/* profile dropdown  */}
+
+                                <ul tabIndex={0} className="dropdown-content menu p-2 shadow rounded-box w-52 bg-slate-50  mt-5 ">
+                                    <img src={user.photoURL} alt="user" className='rounded-full w-[60%] mx-auto border-teal-500 border-2 my-4' />
+                                    <h3 className='text-center'>{user.displayName}</h3>
+                                    <div className="divider"></div>
+                                    <li className='hover:bg-teal-100'>
+                                        <Link to='/dashboard'>
+                                            <span className="material-symbols-outlined text-teal-500">
+                                                dashboard
+                                            </span>
+                                            Dashboard
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link to='/my-bookings'>
+                                            <span className="material-symbols-outlined text-teal-500">
+                                                shopping_cart
+                                            </span>
+                                            My Bookings
+                                        </Link>
+                                    </li>
+                                    <li className='hover:bg-teal-100'>
+                                        <button onClick={handleSignOut}>
+                                            <span className="material-symbols-outlined text-teal-500">
+                                                logout
+                                            </span>
+                                            Log Out
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div> :
+                                <NavLink>
+                                    <li>
+                                        <NavLink
+
+                                            to="/login"
+                                            className={({ isActive, isPending }) =>
+                                                isPending ? "pending" : isActive ? "active" : "btn"
+                                            }
+                                        >
+                                            Login
+                                        </NavLink>
+                                    </li>
+                                </NavLink>
+                        }
+
+                    
                 </div>
             </nav>
         </div>
