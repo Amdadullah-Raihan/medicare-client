@@ -6,6 +6,7 @@ import Appointments from './pages/Appointments/Appointments';
 import ContactUs from './pages/ContactUs/ContactUs';
 import Home from './pages/Home/Home';
 import Login from './pages/Login/Login';
+import Register from './pages/Login/Register';
 import NotFound from './pages/NotFound/NotFound';
 import Reviews from './pages/Reviews/Reviews';
 import Footer from './pages/shared/Footer/Footer';
@@ -22,7 +23,7 @@ function App() {
         <Route path='/reviews' element={<Reviews/>}/>
         <Route path='/contact-us' element={<ContactUs/>}/>
         <Route path='/login' element={<Login/>}/>
-        <Route path='/register' element={<Home/>}/>
+        <Route path='/register' element={<Register/>}/>
 
 
       {/* 404! */}
