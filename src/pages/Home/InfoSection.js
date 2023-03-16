@@ -18,7 +18,7 @@ const InfoSection = () => {
         </div>
         <div>
           <h4 className='text-2xl'>Visit Our Location </h4>
-          <p className='opacity-100'>Ghulshan, Dhaka-1212</p>
+          <p className='opacity-100'>Gulshan, Dhaka-1212</p>
         </div>
       </div>
       <div className='h-[190px] bg-gradient-to-r from-[#19D3AE] to-[#0FCFEC] rounded-lg text-white flex gap-6 justify-center items-center px-4'>
