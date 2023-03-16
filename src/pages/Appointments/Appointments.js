@@ -1,8 +1,15 @@
 import React from 'react'
+import AppointmentsHeader from './AppointmentsHeader'
+import AvailableServices from './AvailableServices'
+import AvailableSlots from './AvailableSlots'
 
 const Appointments = () => {
   return (
-    <div>Appointments</div>
+    <div>
+      <AppointmentsHeader/>
+      <AvailableServices/>
+      <AvailableSlots/>
+    </div>
   )
 }
 
