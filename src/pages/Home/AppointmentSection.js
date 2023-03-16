@@ -5,7 +5,7 @@ import doctor from '../../assests/images/doctor.png';
 import PrimaryButton from '../shared/Buttons/PrimaryButton';
 const AppointmentSection = () => {
     return (
-        <section className='bg-no-repeat bg-cover md:mt-32' style={{ backgroundImage: `url(${appointmentBg})` }}>
+        <section className='bg-no-repeat bg-cover md:mt-32 mb-16' style={{ backgroundImage: `url(${appointmentBg})` }}>
             <div className='container mx-auto md:flex '>
                 
                 <div className='text-white md:w-[70%] py-6 px-4 md:px-0 w-full'>
