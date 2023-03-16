@@ -8,7 +8,7 @@ const ServicesSection = () => {
         <section className='my-16'>
             <div className='container mx-auto text-center'>
                 <h5 className="text-md uppercase text-[#19D3AE]">our sevices</h5>
-                <h3 className='text-xl'>Sevices We Provide</h3>
+                <h3 className='text-xl '>Sevices We Provide</h3>
             </div>
             <div className='container mx-auto grid grid-cols-1 lg:grid-cols-3 gap-6 mt-10 px-4 md:px-0'>
                 <div className=' flex flex-col  items-center justify-center shadow-md rounded-lg p-6'>
