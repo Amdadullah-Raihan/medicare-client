@@ -10,11 +10,11 @@ const AvailableSlots = () => {
         { slot: '7-8 pm' },
         { slot: '7-8 pm' },
         { slot: '7-8 pm' },
-        { slot: '7-8 pm' },
+        
 
     ]
     return (
-        <section className='container mx-auto mb-16'>
+        <section className='container mx-auto mb-16 px-4 md:px-0'>
             {/* section title */}
             <div className='mb-8 text-center'>
                 <h5 className="text-lg text-[#19D3AE]">Available slots for { }</h5>
