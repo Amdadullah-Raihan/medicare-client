@@ -1,6 +1,7 @@
 import React from 'react'
 import HeroSection from './HeroSection'
 import InfoSection from './InfoSection'
+import ServicesSection from './ServicesSection'
 
 
 const Home = () => {
@@ -8,6 +9,7 @@ const Home = () => {
     <div className=' mx-auto'>
       <HeroSection/>
       <InfoSection/>
+      <ServicesSection/>
 
     </div>
   )
