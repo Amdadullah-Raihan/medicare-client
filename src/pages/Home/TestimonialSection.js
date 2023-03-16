@@ -19,7 +19,7 @@ const TestimonialSection = () => {
             {/* grid */}
             <div className='grid grid-cols-1 lg:grid-cols-3 gap-6  px-4 md:px-0'>
                 {/* cards */}
-                <div className='shadow-lg p-4'>
+                <div className='shadow p-4'>
                     <div className='mb-6'>
                         <p>It is a long established fact that by the readable content of a lot layout. The point of using Lorem a more-or-less normal distribu to using Content here, content</p>
                     </div>
@@ -31,7 +31,7 @@ const TestimonialSection = () => {
                         </div>
                     </div>
                 </div>
-                <div className='shadow-lg p-4'>
+                <div className='shadow p-4'>
                     <div className='mb-6'>
                         <p>It is a long established fact that by the readable content of a lot layout. The point of using Lorem a more-or-less normal distribu to using Content here, content</p>
                     </div>
@@ -43,7 +43,7 @@ const TestimonialSection = () => {
                         </div>
                     </div>
                 </div>
-                <div className='shadow-lg p-4'>
+                <div className='shadow p-4'>
                     <div className='mb-6'>
                         <p>It is a long established fact that by the readable content of a lot layout. The point of using Lorem a more-or-less normal distribu to using Content here, content</p>
                     </div>

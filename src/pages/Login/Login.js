@@ -9,7 +9,7 @@ const Login = () => {
 
     return (
         <div className='min-h-[33vh] p-4 '>
-            <div className='container mx-auto p-8 shadow-lg rounded-xl max-w-sm my-16 mx-auto'>
+            <div className='container mx-auto p-8 shadow rounded-xl max-w-sm my-16 mx-auto'>
                 <h3 className="text-3xl w-full mb-6">
                     Login
                 </h3>

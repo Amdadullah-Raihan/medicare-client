@@ -11,17 +11,17 @@ const ServicesSection = () => {
                 <h3 className='text-xl '>Sevices We Provide</h3>
             </div>
             <div className='container mx-auto grid grid-cols-1 lg:grid-cols-3 gap-6 mt-10 px-4 md:px-0'>
-                <div className=' flex flex-col  items-center justify-center shadow-md rounded-lg p-6'>
+                <div className=' flex flex-col  items-center justify-center shadow rounded-lg p-6'>
                     <img src={flouride} alt="" className='h-[110px] mb-4' />
                     <h4 className="text-xl">Flouride Treatment</h4>
                     <p className='text-center'>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
-                <div className=' flex flex-col justify-center items-center shadow-md rounded-lg p-6'>
+                <div className=' flex flex-col justify-center items-center shadow rounded-lg p-6'>
                     <img src={cavity} alt="" className='h-[110px] mb-4' />
                     <h4 className="text-xl">Flouride Treatment</h4>
                     <p className='text-center'>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
-                <div className=' flex flex-col justify-center items-center shadow-md rounded-lg p-6'>
+                <div className=' flex flex-col justify-center items-center shadow rounded-lg p-6'>
                     <img src={teetWhitening} alt="" className='h-[110px] mb-4' />
                     <h4 className="text-xl">Flouride Treatment</h4>
                     <p className='text-center'>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
