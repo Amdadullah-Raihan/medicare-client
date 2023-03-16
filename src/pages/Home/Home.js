@@ -1,5 +1,6 @@
 import React from 'react'
 import AppointmentSection from './AppointmentSection'
+import ContactSection from './ContactSection'
 import DentalCareSection from './DentalCareSection'
 import HeroSection from './HeroSection'
 import InfoSection from './InfoSection'
@@ -16,6 +17,7 @@ const Home = () => {
       <DentalCareSection/>
       <AppointmentSection/>
       <TestimonialSection/>
+      <ContactSection/>
     </div>
   )
 }
