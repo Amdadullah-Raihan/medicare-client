@@ -23,7 +23,7 @@ const AvailableServices = () => {
            {
             services.map((service, i) => 
             // SERVICE CARD
-                <div className='p-6 shadow-md rounded-lg'>
+                <div className='p-6 shadow rounded-lg'>
                     <h5 className='text-[#19D3AE] font-semibold'> {service[i]}</h5>
                 </div>
 
