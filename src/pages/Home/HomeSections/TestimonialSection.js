@@ -1,6 +1,6 @@
 import React from 'react'
-import people from '../../assests/images/people2.png';
-import qoute from '../../assests/icons/quote.svg';
+import people from '../../../assests/images/people2.png';
+import qoute from '../../../assests/icons/quote.svg';
 
 const TestimonialSection = () => {
     return (

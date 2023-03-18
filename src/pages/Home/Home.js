@@ -1,11 +1,11 @@
 import React from 'react'
-import AppointmentSection from './AppointmentSection'
-import ContactSection from './ContactSection'
-import DentalCareSection from './DentalCareSection'
-import HeroSection from './HeroSection'
-import InfoSection from './InfoSection'
-import ServicesSection from './ServicesSection'
-import TestimonialSection from './TestimonialSection'
+import AppointmentSection from './HomeSections/AppointmentSection'
+import ContactSection from './HomeSections/ContactSection'
+import DentalCareSection from './HomeSections/DentalCareSection'
+import HeroSection from './HomeSections/HeroSection'
+import InfoSection from './HomeSections/InfoSection'
+import ServicesSection from './HomeSections/ServicesSection'
+import TestimonialSection from './HomeSections/TestimonialSection'
 
 
 const Home = () => {

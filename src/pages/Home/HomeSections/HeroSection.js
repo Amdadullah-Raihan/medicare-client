@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import heroImg from '../../assests/images/chair.png';
-import PrimaryButton from '../shared/Buttons/PrimaryButton';
+import heroImg from '../../../assests/images/chair.png';
+import PrimaryButton from '../../shared/Buttons/PrimaryButton';
 
 
 

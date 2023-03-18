@@ -1,5 +1,5 @@
 import React from 'react'
-import PrimaryButton from '../shared/Buttons/PrimaryButton'
+import PrimaryButton from '../../shared/Buttons/PrimaryButton'
 
 const AvailableSlots = () => {
 

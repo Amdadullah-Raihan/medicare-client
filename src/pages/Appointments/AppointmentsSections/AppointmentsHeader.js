@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import PrimaryButton from '../shared/Buttons/PrimaryButton'
-import chair from '../../assests/images/chair.png'
+import PrimaryButton from '../../shared/Buttons/PrimaryButton'
+import chair from '../../../assests/images/chair.png'
 import 'react-calendar/dist/Calendar.css';
 import { Calendar } from 'react-calendar'
 

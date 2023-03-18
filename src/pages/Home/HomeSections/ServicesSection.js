@@ -1,7 +1,7 @@
 import React from 'react'
-import flouride from '../../assests/images/fluoride.png'
-import cavity from '../../assests/images/cavity.png'
-import teetWhitening from '../../assests/images/whitening.png'
+import flouride from '../../../assests/images/fluoride.png'
+import cavity from '../../../assests/images/cavity.png'
+import teetWhitening from '../../../assests/images/whitening.png'
 
 const ServicesSection = () => {
     return (

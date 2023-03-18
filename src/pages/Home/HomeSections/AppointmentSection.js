@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import appointmentBg from '../../assests/images/appointment.png';
-import doctor from '../../assests/images/doctor.png';
-import PrimaryButton from '../shared/Buttons/PrimaryButton';
+import appointmentBg from '../../../assests/images/appointment.png';
+import doctor from '../../../assests/images/doctor.png';
+import PrimaryButton from '../../shared/Buttons/PrimaryButton';
 const AppointmentSection = () => {
     return (
         <section className='bg-no-repeat bg-cover md:mt-32 mb-16' style={{ backgroundImage: `url(${appointmentBg})` }}>

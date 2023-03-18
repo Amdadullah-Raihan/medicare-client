@@ -1,6 +1,6 @@
 import React from 'react'
-import PrimaryButton from '../shared/Buttons/PrimaryButton'
-import bg from '../../assests/images/appointment.png';
+import PrimaryButton from '../../shared/Buttons/PrimaryButton'
+import bg from '../../../assests/images/appointment.png';
 
 const ContactSection = () => {
   return (
