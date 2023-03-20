@@ -1,6 +1,7 @@
 
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import AuthProvider from './contexts/AuthProvider';
 import About from './pages/About/About';
 import Appointments from './pages/Appointments/Appointments';
 import ContactUs from './pages/ContactUs/ContactUs';
@@ -15,21 +16,23 @@ import Header from './pages/shared/Header/Header';
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='/about-us' element={<About/>}/>
-        <Route path='/appointments' element={<Appointments/>}/>
-        <Route path='/reviews' element={<Reviews/>}/>
-        <Route path='/contact-us' element={<ContactUs/>}/>
-        <Route path='/login' element={<Login/>}/>
-        <Route path='/register' element={<Register/>}/>
+      <AuthProvider>
+        <Header />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/about-us' element={<About />} />
+          <Route path='/appointments' element={<Appointments />} />
+          <Route path='/reviews' element={<Reviews />} />
+          <Route path='/contact-us' element={<ContactUs />} />
+          <Route path='/login' element={<Login />} />
+          <Route path='/register' element={<Register />} />
 
 
-      {/* 404! */}
-      <Route path='*' element={<NotFound/>}/>
-      </Routes>
-      <Footer/>
+          {/* 404! */}
+          <Route path='*' element={<NotFound />} />
+        </Routes>
+        <Footer />
+      </AuthProvider>
     </div>
   );
 }
