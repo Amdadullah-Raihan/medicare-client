@@ -1,8 +1,12 @@
 import React from 'react'
+import SectionHeader from '../shared/SectionsHeader/SectionHeader'
 
 const ContactUs = () => {
   return (
-    <div>ContactUs</div>
+    <div>
+      <SectionHeader route='Contact Us'></SectionHeader>
+      ContactUs
+    </div>
   )
 }
 

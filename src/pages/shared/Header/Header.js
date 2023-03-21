@@ -158,7 +158,7 @@ const Header = () => {
                                     </Link>
                                 </li>
                                 <li className='hover:bg-teal-100'>
-                                    <Link to='/my-bookings'>
+                                    <Link to='/my-appointments'>
                                         <span className="material-symbols-outlined text-teal-500">
                                             shopping_cart
                                         </span>
