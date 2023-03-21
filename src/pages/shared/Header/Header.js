@@ -77,8 +77,8 @@ const Header = () => {
                         </ul>
                     </div>
                     <div className='relative '>
-                        <div className="absolute h-full mt-2 md:h-12 md:mt-0 w-full z-0 bg-teal-500 opacity-30 ml-2 "></div>
-                        <Link to='/' className='relative z-10 lg:text-3xl text-2xl md:text-3xl font-bold text-[#3A4256] text-white bg-teal-500  px-2' >MediCare</Link>
+                        <div className="absolute h-full mt-2 md:h-12 md:mt-0 w-full z-0  bg-gradient-to-r to-[#19D3AE] from-[#0FCFEC]  opacity-30 ml-2 "></div>
+                        <Link to='/' className='relative z-10 lg:text-3xl text-2xl md:text-3xl font-bold text-[#3A4256] text-white   px-2 bg-gradient-to-r from-[#19D3AE] to-[#0FCFEC] ' >MediCare</Link>
                     </div>
 
                 </div>

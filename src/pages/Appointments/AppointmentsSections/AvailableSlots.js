@@ -1,5 +1,6 @@
 import React from 'react'
 import PrimaryButton from '../../shared/Buttons/PrimaryButton'
+import AppointmentModal from './AppointmentModal'
 
 const AvailableSlots = () => {
 
@@ -28,13 +29,14 @@ const AvailableSlots = () => {
                         <div className='shadow p-8 leading-10 text-center'>
                             <h5 className="text-lg text-[#19D3AE]">Teeth Orthodontics</h5>
                             <p>  {slot.slot}</p>
-                            <PrimaryButton>Book Appointment</PrimaryButton>
+                         
+                            <label htmlFor="my-modal-3" className='btn bg-gradient-to-r from-[#19D3AE] to-[#0FCFEC] border-none'>Book appointment</label>
                         </div>
 
                     )
                 }
             </div>
-
+                <AppointmentModal/>
         </section>
     )
 }
