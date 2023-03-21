@@ -1,6 +1,5 @@
 import React from 'react'
 import { MapContainer, Marker, Popup, TileLayer, useMap } from 'react-leaflet'
-import PrimaryButton from '../shared/Buttons/PrimaryButton'
 import SectionHeader from '../shared/SectionsHeader/SectionHeader'
 
 
@@ -67,7 +66,7 @@ const ContactUs = () => {
           </div>
           <div>
             <textarea className='h-[200px] border w-full p-6' placeholder='Write your message here'></textarea>
-            <input type="submit" className='btn bg-gradient-to-r from-[#19D3AE] to-[#0FCFEC] border-none px-16 rounded-none mt-8' />
+            <input type="submit" value='send message' className='btn bg-gradient-to-r from-[#19D3AE] to-[#0FCFEC] border-none px-16 rounded-none mt-8' />
           </div>
 
         </form>
