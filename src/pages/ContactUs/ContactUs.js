@@ -12,7 +12,7 @@ const ContactUs = () => {
 
       {/* Map Container starts */}
       <section>
-        <div className="container md:p-8 bg-white p-4 -mt-24 relative mx-auto shadow mx">
+        <div className="container md:p-8 bg-white p-4 md:-mt-24 relative mx-auto shadow mx">
           <section className="w-full grid grid-cols-2 py-6 lg:grid-cols-4 gap-4 ">
             <div className='text-center'>
               <i className='fa-solid fa-phone text-teal-500 md:text-3xl'></i>
@@ -56,7 +56,7 @@ const ContactUs = () => {
       </section>
       {/* Map container ends  */}
       {/* Form container starts */}
-      <section className='text-center my-16 px-12 container mx-auto'>
+      <section className='text-center my-16 md:px-12 px-6 container mx-auto'>
         <h4 className="uppercase text-lg text-teal-500">Contact us</h4>
         <h1 className="font-bold capitalize text-3xl">leave message</h1>
 
