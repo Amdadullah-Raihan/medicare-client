@@ -73,10 +73,14 @@ const Header = () => {
                                     Contact Us
                                 </NavLink>
                             </li>
-                      
+
                         </ul>
                     </div>
-                    <Link to='/' className='lg:text-4xl text-2xl md:text-3xl font-bold text-[#3A4256]' >MediCare</Link>
+                    <div className='relative '>
+                        <div className="absolute h-full mt-2 md:h-12 md:mt-0 w-full z-0 bg-teal-500 opacity-30 ml-2 "></div>
+                        <Link to='/' className='relative z-10 lg:text-3xl text-2xl md:text-3xl font-bold text-[#3A4256] text-white bg-teal-500  px-2' >MediCare</Link>
+                    </div>
+
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
@@ -175,18 +179,18 @@ const Header = () => {
                                 </li>
                             </ul>
                         </div> :
-                         
-                              
-                                    <NavLink
-                                        
-                                        to="/login"
-                                        className={({ isActive, isPending }) =>
-                                            isPending ? "pending" : isActive ? "active" : "btn px-6 btn-outline border-teal-500 border-2"
-                                        }
-                                    >
-                                        Login
-                                    </NavLink>
-                             
+
+
+                            <NavLink
+
+                                to="/login"
+                                className={({ isActive, isPending }) =>
+                                    isPending ? "pending" : isActive ? "active" : "btn px-6 btn-outline border-teal-500 border-2"
+                                }
+                            >
+                                Login
+                            </NavLink>
+
                     }
 
 
