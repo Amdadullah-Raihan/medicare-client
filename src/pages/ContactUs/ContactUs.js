@@ -38,7 +38,7 @@ const ContactUs = () => {
 
             </div>
           </section>
-          <section className='container mx-auto w-full '>
+          <section className='container mx-auto w-full z-0 relative'>
             <MapContainer center={[23.798919, 90.434168]} zoom={13} scrollWheelZoom={false}>
               <TileLayer
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
