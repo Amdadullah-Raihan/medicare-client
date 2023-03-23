@@ -5,6 +5,7 @@ import AuthProvider from './contexts/AuthProvider';
 import About from './pages/About/About';
 import Appointments from './pages/Appointments/Appointments';
 import ContactUs from './pages/ContactUs/ContactUs';
+import Dashboard from './pages/Dashboard/Dashboard';
 import Home from './pages/Home/Home';
 import Login from './pages/Login/Login';
 import Register from './pages/Login/Register';
@@ -28,7 +29,7 @@ function App() {
           <Route path='/login' element={<Login />} />
           <Route path='/register' element={<Register />} />
           <Route path='/my-appointments' element={<MyAppointments/>}/>
-
+          <Route path='/dashboard/*' element={<Dashboard/>}/>
 
           {/* 404! */}
           <Route path='*' element={<NotFound />} />
